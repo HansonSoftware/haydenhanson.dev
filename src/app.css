@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'Montserrat';
+		src: local('Montserrat'), local('Montserrat'), local('montserrat'), local('montserrat'),
+			url('/fonts/montserrat/Montserrat-Regular.ttf');
+		font-weight: normal;
+		font-display: swap;
+	}
+
+	:root {
+		--background: 0 0% 100%;
+		--foreground: 20 14.3% 4.1%;
+		--card: 0 0% 97%;
+		--card-foreground: 20 14.3% 4.1%;
+		--popover: 0 0% 97%;
+		--popover-foreground: 20 14.3% 4.1%;
+		--primary: 200 100% 50%;
+		--primary-foreground: 0 0% 100%;
+		--secondary: 0 0% 80%;
+		--secondary-foreground: 24 9.8% 10%;
+		--muted: 0 0% 80%;
+		--muted-foreground: 25 5.3% 44.7%;
+		--accent: 0 0% 80%;
+		--accent-foreground: 24 9.8% 10%;
+		--destructive: 0 72.22% 50.59%;
+		--destructive-foreground: 0 0% 100%;
+		--border: 0 0% 90%;
+		--input: 0 0% 90%;
+		--ring: 200 100% 50%;
+		--radius: 0.5rem;
+	}
+	.dark {
+		--background: 200 15% 8%;
+		--foreground: 0 0% 90%;
+		--card: 200 15% 8%;
+		--card-foreground: 0 0% 90%;
+		--popover: 200 15% 8%;
+		--popover-foreground: 0 0% 90%;
+		--primary: 200 80.2% 48.2%;
+		--primary-foreground: 0 0% 100%;
+		--secondary: 200 15% 30%;
+		--secondary-foreground: 0 0% 90%;
+		--muted: 200 15% 30%;
+		--muted-foreground: 0 0% 60%;
+		--accent: 200 15% 30%;
+		--accent-foreground: 0 0% 90%;
+		--destructive: 0 72.2% 50.6%;
+		--destructive-foreground: 0 0% 100%;
+		--border: 200 15% 30%;
+		--input: 200 15% 30%;
+		--ring: 200 80.2% 48.2%;
+	}
+}
