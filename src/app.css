@@ -3,6 +3,45 @@
 @tailwind utilities;
 
 @layer base {
+	:root {
+		--background: #eff1f5; /* Base */
+		--foreground: #4c4f69; /* Text */
+		--card: #bcc0cc; /* Surface 1 */
+		--card-foreground: #5c5f77; /* Subtext 1 */
+		--popover: #9ca0b0; /* Overlay 0 */
+		--popover-foreground: #6c6f85; /* Subtext 0 */
+		--primary: #8839ef; /* Mauve */
+		--primary-foreground: #eff1f5; /* Base */
+		--secondary: #1e66f5; /* Blue */
+		--secondary-foreground: #eff1f5; /* Base */
+		--accent: #7287fd; /* Lavender */
+		--accent-foreground: #eff1f5; /* Base */
+		--destructive: #d20f39; /* Red */
+		--destructive-foreground: #eff1f5; /* Base */
+		--crust: #9ca3af; /* Gray-400 */
+		--input: #9ca3af; /* Gray-400 */
+		--radius: 0.5rem;
+	}
+	.dark {
+		--background: #1e1e2e; /* Base */
+		--foreground: #cdd6f4; /* Text */
+		--card: #45475a; /* Surface 1 */
+		--card-foreground: #bac2de; /* Subtext 1 */
+		--popover: #6c7086; /* Overlay 0 */
+		--popover-foreground: #a6adc8; /* Subtext 0 */
+		--primary: #a6e3a1; /* Green */
+		--primary-foreground: #1e1e2e; /* Base */
+		--secondary: #fab387; /* Peach */
+		--secondary-foreground: #1e1e2e; /* Base */
+		--accent: #b4befe; /* Lavender */
+		--accent-foreground: #1e1e2e; /* Base */
+		--destructive: #f38ba8; /* Red */
+		--destructive-foreground: #1e1e2e; /* Base */
+		--crust: #374151; /* Gray-700 */
+		--input: #374151; /* Gray-700 */
+		--radius: 0.375rem;
+	}
+
 	@font-face {
 		font-family: 'Montserrat';
 		src: local('Montserrat'), local('Montserrat'), local('montserrat'), local('montserrat'),
@@ -10,48 +49,11 @@
 		font-weight: normal;
 		font-display: swap;
 	}
-
-	:root {
-		--background: 0 0% 100%;
-		--foreground: 20 14.3% 4.1%;
-		--card: 0 0% 97%;
-		--card-foreground: 20 14.3% 4.1%;
-		--popover: 0 0% 97%;
-		--popover-foreground: 20 14.3% 4.1%;
-		--primary: 200 100% 50%;
-		--primary-foreground: 0 0% 100%;
-		--secondary: 0 0% 80%;
-		--secondary-foreground: 24 9.8% 10%;
-		--muted: 0 0% 80%;
-		--muted-foreground: 25 5.3% 44.7%;
-		--accent: 0 0% 80%;
-		--accent-foreground: 24 9.8% 10%;
-		--destructive: 0 72.22% 50.59%;
-		--destructive-foreground: 0 0% 100%;
-		--border: 0 0% 90%;
-		--input: 0 0% 90%;
-		--ring: 200 100% 50%;
-		--radius: 0.5rem;
-	}
-	.dark {
-		--background: 200 15% 8%;
-		--foreground: 0 0% 90%;
-		--card: 200 15% 8%;
-		--card-foreground: 0 0% 90%;
-		--popover: 200 15% 8%;
-		--popover-foreground: 0 0% 90%;
-		--primary: 200 80.2% 48.2%;
-		--primary-foreground: 0 0% 100%;
-		--secondary: 200 15% 30%;
-		--secondary-foreground: 0 0% 90%;
-		--muted: 200 15% 30%;
-		--muted-foreground: 0 0% 60%;
-		--accent: 200 15% 30%;
-		--accent-foreground: 0 0% 90%;
-		--destructive: 0 72.2% 50.6%;
-		--destructive-foreground: 0 0% 100%;
-		--border: 200 15% 30%;
-		--input: 200 15% 30%;
-		--ring: 200 80.2% 48.2%;
+	@font-face {
+		font-family: 'Montserrat';
+		src: local('Montserrat Bold'), local('Montserrat-Bold'), local('montserrat bold'),
+			local('montserrat-bold'), url('/fonts/montserrat/Montserrat-Bold.ttf');
+		font-weight: bold;
+		font-display: swap;
 	}
 }
