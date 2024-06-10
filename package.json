@@ -28,10 +28,21 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@tailwindcss/aspect-ratio": "^0.4.2",
+		"@tailwindcss/forms": "^0.5.7",
+		"@tailwindcss/typography": "^0.5.13",
 		"@typescript-eslint/eslint-plugin": "^7.12.0",
 		"@typescript-eslint/parser": "^7.12.0",
+		"clsx": "^2.1.1",
+		"escape-html": "^1.0.3",
 		"eslint-plugin-svelte": "^2.39.2",
 		"lucide-svelte": "^0.390.0",
+		"mdsvex": "^0.11.2",
+		"shiki": "^0.14.4",
+		"shiki-themes": "^0.2.7",
+		"svelte-inview": "^4.0.2",
+		"svelte-motion": "^0.12.2",
+		"tailwind-merge": "^2.3.0",
 		"typescript-eslint": "^7.12.0"
 	}
 }
