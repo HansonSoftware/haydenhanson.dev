@@ -3,7 +3,10 @@
 	import { Github, Linkedin, RssIcon, Copyleft } from 'lucide-svelte';
 </script>
 
-<footer class="mx-auto mt-12 flex h-auto w-full flex-col items-center justify-center gap-2 p-2">
+<footer
+	class="mx-auto border-t border-crust max-w-7xl mt-12 flex h-auto
+	w-full flex-col items-center justify-center gap-2 p-2"
+>
 	<div class="flex flex-row gap-2 sm:gap-4">
 		<IconLink href="https://github.com/HansonSoftware" target="_blank" title="GitHub">
 			<Github class="h-8 w-8" />
