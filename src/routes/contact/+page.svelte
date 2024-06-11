@@ -1,4 +1,5 @@
 <script>
+  import { page } from '$app/stores';
   import IconLink from '$lib/components/IconLink.svelte';
   import {
     Github,
@@ -8,6 +9,22 @@
     Globe
   } from 'lucide-svelte';
 </script>
+
+<svelte:head>
+  <title>Hayden Hanson | Contact</title>
+  <meta
+    name="description"
+    content="Software developer passionate about beautiful yet minimalistic websites, fast backend code, problem solving and linux workflows."
+  />
+  <meta property="og:title" content="Hayden Hanson" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content={$page.url.href} />
+  <meta
+    property="og:description"
+    content="Software developer passionate about beautiful yet minimalistic websites, fast backend code, problem solving and linux workflows."
+  />
+</svelte:head>
 
 <section class="grid place-items-center place-content-center max-w-5xl">
   <header class="w-fit flex items-center border-b py-2 border-crust">

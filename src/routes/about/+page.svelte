@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from '$app/stores';
   const work: string = 'in Web Dev and AI Training';
 
   import Modal from '$lib/components/Modal.svelte';
@@ -15,6 +16,21 @@
   }
 </script>
 
+<svelte:head>
+  <title>Hayden Hanson | About</title>
+  <meta
+    name="description"
+    content="Software developer passionate about beautiful yet minimalistic websites, fast backend code, problem solving and linux workflows."
+  />
+  <meta property="og:title" content="Hayden Hanson" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content={$page.url.href} />
+  <meta
+    property="og:description"
+    content="Software developer passionate about beautiful yet minimalistic websites, fast backend code, problem solving and linux workflows."
+  />
+</svelte:head>
 <div class="grid max-w-5xl place-content-center place-items-center mx-4">
   <header class="w-fit flex items-center border-b py-2 border-crust">
     <h1 class="text-4xl sm:text-5xl text-center font-semibold">About Me</h1>
@@ -198,4 +214,6 @@
     </div>
     <!-- MODAL GRID -->
   </section>
+
+  <section></section>
 </div>
