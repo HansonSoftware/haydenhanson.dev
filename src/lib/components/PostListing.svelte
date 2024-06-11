@@ -4,7 +4,7 @@
 
   export let post: MarkdownPostMetadataAndSlug;
 
-  const href = `/posts/${post.slug}`;
+  const href = `/blog/${post.slug}`;
 </script>
 
 <article class="p-4 sm:flex sm:space-x-4">
