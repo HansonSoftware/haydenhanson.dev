@@ -2,13 +2,13 @@
   import '../../../prism/prism-night-owl.css';
   import type { PageData } from './$types';
   import CopyCodeInjector from '$lib/components/CopyCodeInjector.svelte';
-  import ProjectHeader from '$lib/components/ProjectHeader.svelte';
+  import PostHeader from '$lib/components/PostHeader.svelte';
   import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
   import { page } from '$app/stores';
 
   export let data: PageData;
 
-  const { metadata, project: Project } = data;
+  const { metadata, post: Post } = data;
 </script>
 
 <svelte:head>
@@ -21,13 +21,12 @@
   <meta property="og:url" content={$page.url.href} />
   <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
-
 <article class="max-w-[22rem] sm:max-w-xl md:max-w-3xl lg:max-w-5xl mx-auto">
-  <ProjectHeader {metadata} />
+  <PostHeader {metadata} />
 
   <div class="prose max-w-none px-4 py-4 dark:prose-invert md:prose-lg">
     <CopyCodeInjector>
-      <Project />
+      <Post />
     </CopyCodeInjector>
   </div>
 </article>

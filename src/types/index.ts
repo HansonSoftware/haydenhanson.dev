@@ -2,16 +2,32 @@ import type { ComponentType } from 'svelte';
 
 // project metadata
 export type MarkdownProject = {
-	metadata: {
-		title: string;
-		imgUrl: string;
-		completedAt: string;
-		summary: string;
-	};
-	default: ComponentType;
+  metadata: {
+    title: string;
+    imgUrl: string;
+    completedAt: string;
+    summary: string;
+  };
+  default: ComponentType;
 };
 
 export type ProjectMetadataAndSlug = {
-	slug: string;
-	metadata: MarkdownProject['metadata'];
+  slug: string;
+  metadata: MarkdownProject['metadata'];
+};
+
+// blogpost metadata
+export type MarkdownPost = {
+  metadata: {
+    title: string;
+    imgUrl: string;
+    publishedAt: string;
+    summary: string;
+  };
+  default: ComponentType;
+};
+
+export type MarkdownPostMetadataAndSlug = {
+  slug: string;
+  metadata: MarkdownPost['metadata'];
 };
