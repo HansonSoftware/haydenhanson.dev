@@ -6,8 +6,8 @@
 	:root {
 		--background: #eff1f5; /* Base */
 		--foreground: #4c4f69; /* Text */
-		--card: #bcc0cc; /* Surface 1 */
-		--card-foreground: #5c5f77; /* Subtext 1 */
+		--card: #e5e7eb; /* 200 */
+		--card-foreground: #4c4f69; /* Text */
 		--popover: #9ca0b0; /* Overlay 0 */
 		--popover-foreground: #6c6f85; /* Subtext 0 */
 		--primary: #8839ef; /* Mauve */
