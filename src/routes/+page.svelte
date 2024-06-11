@@ -27,14 +27,11 @@
 <section
   class="pt-24 max-w-5xl grid place-items-center place-content-center mx-2"
 >
-  <header
-    class="mb-4 w-fit flex items-center
-    border-b py-2 border-gray-400 dark:border-gray-700"
-  >
-    <h2 class="text-3xl sm:text-5xl text-center font-semibold">Recent Posts</h2>
+  <header class="w-fit flex items-center border-b py-2 border-crust">
+    <h1 class="text-3xl sm:text-4xl text-center font-semibold">Recent Posts</h1>
   </header>
 
-  <section class="divide-y dark:divide-gray-700 grid grid-cols-1">
+  <section class="pt-4 divide-y dark:divide-gray-700 grid grid-cols-1">
     {#each data.posts as post}
       <PostListing {post} />
     {/each}
