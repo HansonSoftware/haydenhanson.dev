@@ -5,10 +5,6 @@ completedAt: '2021/10/12'
 summary: 'C program that allows users to schedule tasks from the command line.'
 ---
 
-# ☝️ Final Version
-
-![Preview](/images/projects/process-scheduler/final.png)
-
 ## Startup
 
 ![Preview](/images/projects/process-scheduler/start.png)
