@@ -5,12 +5,6 @@ completedAt: '2022-04-15'
 summary: 'Mini UNIX shell that packs quite a bit of functionality.'
 ---
 
-# ☝️ Final Version
-
-I completed this project for GMU's CS 367 Course - Computer Systems and Programming
-
-![Preview](/images/projects/taskman-shell/fresh.png)
-
 I completed this project for GMU's CS 367 Course - Computer Systems and Programming. The bulk of my code can be found in src/taskman.c. In order to abide by my university's honor code policy, the source code is private. However, I have received permission to share it with recruiters and interviewers.
 
 ![Preview](/images/projects/taskman-shell/shell.png)
