@@ -9,7 +9,7 @@
 
 <article class="p-4 sm:flex sm:space-x-4">
   <a {href} class="block sm:w-80">
-    <div class="aspect-h-9 aspect-w-16 overflow-hidden rounded-lg">
+    <div class="aspect-h-9 aspect-w-16 overflow-hidden rounded-md">
       <img
         src={post.metadata.imgUrl}
         alt={post.metadata.title}

@@ -9,11 +9,11 @@
 
 <article class="p-4 sm:flex sm:space-x-4">
   <a {href} class="block sm:w-80">
-    <div class="aspect-h-9 aspect-w-16 overflow-hidden rounded-lg">
+    <div class="aspect-h-9 aspect-w-16 overflow-hidden rounded-md">
       <img
         src={project.metadata.imgUrl}
         alt={project.metadata.title}
-        class="object-cover"
+        class="object-fit"
       />
     </div>
   </a>
