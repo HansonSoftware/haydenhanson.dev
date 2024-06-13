@@ -199,7 +199,7 @@
 
         <ol class="list-disc space-y-2">
           <li>
-            Worked with small businesses to optimize their online precense.
+            Worked with small businesses to optimize their online presence.
           </li>
           <li>
             Developed high end custom websites, from initial design to

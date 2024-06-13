@@ -8,7 +8,7 @@
 
 <button
   on:click={() => toggleModal(i)}
-  class="px-8 py-2 w-80 lg:w-96 bg-card text-card-foreground rounded-md border border-crust drop-shadow-lg"
+  class="px-8 py-2 w-76 lg:w-96 bg-card text-card-foreground rounded-md border border-crust drop-shadow-lg"
 >
   <h2 class="text-lg font-bold">{jobTitle}</h2>
   <h3 class="font-thin text-secondary">{company}</h3>
