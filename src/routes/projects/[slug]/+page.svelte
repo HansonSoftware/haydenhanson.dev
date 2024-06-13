@@ -25,7 +25,9 @@
 <article class="max-w-[22rem] sm:max-w-xl md:max-w-3xl lg:max-w-5xl mx-auto">
   <ProjectHeader {metadata} />
 
-  <div class="prose max-w-none px-4 py-4 dark:prose-invert md:prose-lg">
+  <div
+    class="prose prose-headings:text-foreground rose-p:text-foreground max-w-none px-4 py-4 dark:prose-invert md:prose-lg"
+  >
     <CopyCodeInjector>
       <Project />
     </CopyCodeInjector>

@@ -24,7 +24,9 @@
 <article class="max-w-[22rem] sm:max-w-xl md:max-w-3xl lg:max-w-5xl mx-auto">
   <PostHeader {metadata} />
 
-  <div class="prose max-w-none px-4 py-4 dark:prose-invert md:prose-lg">
+  <div
+    class="max-w-none px-4 py-4 dark:prose-invert prose md:prose-lg prose-headings:text-foreground prose-p:text-foreground"
+  >
     <CopyCodeInjector>
       <Post />
     </CopyCodeInjector>
