@@ -54,7 +54,8 @@
       <a
         {href}
         {title}
-        class:active={href === '/' ? routeId === '/' : url.includes(href)}
+        class:active={(href === '/' ? routeId === '/' : url.includes(href)) ||
+          url.includes('/blog/')}
         class="flex flex-row items-center justify-center gap-2 text-sm sm:text-lg"
       >
         {title}
