@@ -1,6 +1,6 @@
 # My Personal Blog Site
 
-Attribution: I used [Josean's walkthrough](https://github.com/josean-dev/sveltekit-blog) for creating the blog.
+> Attribution: I used [Josean's walkthrough](https://github.com/josean-dev/sveltekit-blog) for creating the blog api.
 
 ## Created with SvelteKit
 
