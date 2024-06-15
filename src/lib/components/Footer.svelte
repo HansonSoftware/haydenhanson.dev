@@ -22,7 +22,7 @@
     >
       <Linkedin class="h-8 w-8" />
     </IconLink>
-    <IconLink href="/api/rss" target="_blank" title="RSS Feed">
+    <IconLink href="/rss.xml" target="_blank" title="RSS Feed">
       <RssIcon class="h-8 w-8" />
     </IconLink>
   </div>

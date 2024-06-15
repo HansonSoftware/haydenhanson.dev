@@ -1,5 +1,5 @@
 import type { RequestHandler } from '@sveltejs/kit';
-import type { MarkdownPostMetadataAndSlug } from '../../../types';
+import type { MarkdownPostMetadataAndSlug } from '../../types';
 
 export const GET: RequestHandler = async ({ fetch }) => {
   try {
