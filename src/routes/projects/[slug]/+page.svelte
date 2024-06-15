@@ -1,5 +1,4 @@
 <script lang="ts">
-  import '../../../../themes/prism/prism-night-owl.css';
   import '../../../prism/prism-night-owl.css';
   import type { PageData } from './$types';
   import CopyCodeInjector from '$lib/components/CopyCodeInjector.svelte';
