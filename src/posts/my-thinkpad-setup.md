@@ -11,8 +11,11 @@ Many say that the T480 is the last great ThinkPad model. Its number of useful po
 
 ## Software
 
-OS: Arch Linux
-WC (Wayland Compositor): Hyprland
+- OS: Arch Linux
+- DE: Hyprland (Wayland)
+- Shell: zsh
+- Terminal: kitty
+- Browser: Firefox (Hardened)
 
 ## Hardware
 
