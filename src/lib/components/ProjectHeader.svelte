@@ -6,7 +6,7 @@
 </script>
 
 <header class="p-4">
-  <div class="mb-6 w-full sm:w-3/5">
+  <div class="mb-6 w-full">
     <div class="aspect-h-9 aspect-w-16 overflow-hidden rounded-lg">
       {#if metadata.imgUrl}
         <img src={metadata.imgUrl} alt={metadata.title} class="object-cover" />
@@ -20,7 +20,7 @@
     </h1>
 
     <div class="inline-block border-t py-2 dark:border-gray-700">
-      <span>Published: </span>
+      <span>Completed On: </span>
       <time class="font-light" datetime={metadata.completedAt}>
         {formatDate(metadata.completedAt)}
       </time>

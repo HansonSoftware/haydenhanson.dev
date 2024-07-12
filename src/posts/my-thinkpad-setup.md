@@ -24,13 +24,7 @@ Many say that the T480 is the last great ThinkPad model. Its number of useful po
 
 ![Browser](/images/posts/my-thinkpad-setup/browser.png)
 
-In my hyprland configuration I have set mainMod to the windows (SUPER) key:
-
-```sh
-$mainMod = SUPER # windows key
-```
-
-I switch between workspaces with SUPER followed by a number:
+I switch between workspaces with the superkey followed by a number:
 
 ```sh
 # Switch workspaces with mainMod + [0-9]
@@ -74,6 +68,6 @@ I am using the ThinkPad T480 14.0" FHD Touchscreen with an i5-8350U CPU, 16GB DD
 
 The only problem was that the battery life was horrible. I upgraded the external battery to a 72WH battery to fix this.
 
-If you have a really keen eye, you may have noticed just how much my battery went down in between taking those screenshots..
+If you have a keen eye, you may have noticed just how much my battery went down in between taking those screenshots..
 
 Because of this, the next upgrade I plan to make is to replace the internal battery! I also want to upgrade the CPU cooler and re-apply thermal paste, updates coming soon!
