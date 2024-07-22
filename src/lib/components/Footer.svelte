@@ -27,7 +27,11 @@
     </IconLink>
   </div>
   <div class="flex items-center gap-2">
-    <span class="text-secondary"><Copyleft class="h-5 w-5" /></span>
+    <a
+      href="https://github.com/HansonSoftware/haydenhanson.dev"
+      target="_blank"
+      class="text-secondary"><Copyleft class="h-5 w-5" /></a
+    >
     <p class="text-lg">2024 Hayden Hanson</p>
   </div>
 </footer>
