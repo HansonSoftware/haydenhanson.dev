@@ -118,9 +118,9 @@
         title="Pandora Solutions"
       >
         <Globe class="h-6 w-6 sm:h-8 sm:w-8 " />
-        <h2 class=" font-semibold text-2xl">Pandora Solutions</h2>
+        <h2 class="font-semibold text-2xl">Pandora Solutions</h2>
       </IconLink>
-      <p class=" italic text-sm text-center">We build high quality software.</p>
+      <p class="italic text-sm text-center">We build high quality software.</p>
     </div>
   </div>
 </section>
@@ -140,7 +140,7 @@
         title="Capital One Savor One"
       >
         <CreditCard class="h-6 w-6 sm:h-8 sm:w-8 " />
-        <h2 class=" font-semibold text-2xl">Capital One Savor One</h2>
+        <h2 class="font-semibold text-xl">Capital One Savor One</h2>
       </IconLink>
       <p class=" italic text-sm text-center">Great starter credit card!</p>
     </div>
