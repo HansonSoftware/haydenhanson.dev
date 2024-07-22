@@ -2,7 +2,7 @@
 title: 'My ThinkPad Setup'
 imgUrl: '/images/posts/my-thinkpad-setup/laptop.jpg'
 publishedAt: '2024-06-13'
-summary: 'This is an overview of my i5-8350U ThinkPad T480. I daily drive this wonderful laptop, I switched from my M1 macbook pro. Here I explain what modifications I have made and how I set up my development workflow.'
+summary: 'This is an overview of my 2018 ThinkPad T480. Here I explain what modifications I have made and how I set up my development workflow.'
 ---
 
 ## The Last Great ThinkPad.
