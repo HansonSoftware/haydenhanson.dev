@@ -10,7 +10,7 @@
   <title>Hayden Hanson | Blog</title>
   <meta
     name="description"
-    content="Software developer passionate about beautiful yet minimalistic websites, fast backend code, problem solving and linux workflows."
+    content="I am passionate about beautiful yet minimalistic websites, increasing server performance, developer workflows, problem solving and Linux. Most importantly, I love to learn!"
   />
   <meta property="og:title" content="Hayden Hanson" />
   <meta property="og:type" content="website" />
@@ -18,7 +18,7 @@
   <meta property="og:url" content={$page.url.href} />
   <meta
     property="og:description"
-    content="Software developer passionate about beautiful yet minimalistic websites, fast backend code, problem solving and linux workflows."
+    content="I am passionate about beautiful yet minimalistic websites, increasing server performance, developer workflows, problem solving and Linux. Most importantly, I love to learn!"
   />
 </svelte:head>
 

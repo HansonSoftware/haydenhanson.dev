@@ -4,7 +4,7 @@
 
   import Modal from '$lib/components/Modal.svelte';
   import WorkButton from '$lib/components/WorkButton.svelte';
-  let modals = [
+  const modals = [
     { showModal: false },
     { showModal: false },
     { showModal: false },
@@ -20,7 +20,7 @@
   <title>Hayden Hanson | About</title>
   <meta
     name="description"
-    content="Software developer passionate about beautiful yet minimalistic websites, fast backend code, problem solving and linux workflows."
+    content="I am passionate about beautiful yet minimalistic websites, increasing server performance, developer workflows, problem solving and Linux. Most importantly, I love to learn!"
   />
   <meta property="og:title" content="Hayden Hanson" />
   <meta property="og:type" content="website" />
@@ -28,7 +28,7 @@
   <meta property="og:url" content={$page.url.href} />
   <meta
     property="og:description"
-    content="Software developer passionate about beautiful yet minimalistic websites, fast backend code, problem solving and linux workflows."
+    content="I am passionate about beautiful yet minimalistic websites, increasing server performance, developer workflows, problem solving and Linux. Most importantly, I love to learn!"
   />
 </svelte:head>
 <div class="grid max-w-5xl place-content-center place-items-center mx-4">
@@ -54,9 +54,9 @@
         I'm a Software Developer currently working {work}.
       </h2>
       <p>
-        I'm a recent graduate looking to be impactful in my team. I am
-        passionate about beautiful yet minimalistic websites, fast backend code,
-        problem solving and linux workflows.
+        I am passionate about beautiful yet minimalistic websites, increasing
+        server performance, developer workflows, problem solving and Linux. Most
+        importantly, I love to learn!
       </p>
       <p>
         This site is meant to be my little corner of the internet, I update it
