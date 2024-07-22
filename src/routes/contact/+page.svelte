@@ -6,7 +6,8 @@
     Linkedin,
     Mail,
     BriefcaseBusiness,
-    Globe
+    Globe,
+    CreditCard
   } from 'lucide-svelte';
 </script>
 
@@ -105,11 +106,11 @@
     <h1
       class="text-4xl sm:text-5xl text-center font-semibold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent"
     >
-      Freelance
+      Business
     </h1>
   </header>
 
-  <div class="flex flex-col gap-4 justify-center items-center">
+  <div class="flex flex-col gap-4 pt-4 justify-center items-center">
     <div class="flex flex-col gap-0 text-center">
       <IconLink
         href="https://pandorasolutions.co"
@@ -120,6 +121,28 @@
         <h2 class=" font-semibold text-2xl">Pandora Solutions</h2>
       </IconLink>
       <p class=" italic text-sm text-center">We build high quality software.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pt-12 grid place-items-center place-content-center max-w-5xl">
+  <header class="w-fit flex items-center border-b py-2 border-crust">
+    <h1 class="text-3xl sm:text-4xl text-center font-semibold">
+      Referral Links
+    </h1>
+  </header>
+
+  <div class="flex flex-col gap-4 pt-4 justify-center items-center">
+    <div class="flex flex-col gap-0 text-center">
+      <IconLink
+        href="https://i.capitalone.com/JQ9r0SIcT"
+        target="_blank"
+        title="Capital One Savor One"
+      >
+        <CreditCard class="h-6 w-6 sm:h-8 sm:w-8 " />
+        <h2 class=" font-semibold text-2xl">Capital One Savor One</h2>
+      </IconLink>
+      <p class=" italic text-sm text-center">Great starter credit card!</p>
     </div>
   </div>
 </section>
