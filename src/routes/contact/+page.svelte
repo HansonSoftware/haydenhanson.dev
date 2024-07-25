@@ -43,7 +43,7 @@
           title="GitHub"
         >
           <Github class="h-6 w-6 sm:h-8 sm:w-8 " />
-          <h2 class=" font-semibold text-2xl">GitHub</h2>
+          <h2 class=" font-semibold text-2xl underline">GitHub</h2>
         </IconLink>
         <p class=" italic text-sm indent-2">Where all my projects live.</p>
       </div>
@@ -55,7 +55,7 @@
           title="LinkedIn"
         >
           <Linkedin class="h-6 w-6 sm:h-8 sm:w-8 " />
-          <h2 class=" font-semibold text-2xl">LinkedIn</h2>
+          <h2 class=" font-semibold text-2xl underline">LinkedIn</h2>
         </IconLink>
         <p class=" italic text-sm indent-2">Let's connect!</p>
       </div>
@@ -70,7 +70,7 @@
             title="haydenhansondev@gmail.com"
           >
             <Mail class="h-6 w-6 sm:h-8 sm:w-8 " />
-            <h2 class=" font-semibold text-2xl">Email</h2>
+            <h2 class=" font-semibold text-2xl underline">Email</h2>
           </IconLink>
           <p class=" italic text-sm indent-2">My developer email.</p>
         </div>
@@ -82,7 +82,7 @@
             title="Resume"
           >
             <BriefcaseBusiness class="h-6 w-6 sm:h-8 sm:w-8 " />
-            <h2 class=" font-semibold text-2xl">Resume</h2>
+            <h2 class=" font-semibold text-2xl underline">Resume</h2>
           </IconLink>
           <p class=" italic text-sm indent-2">Last updated June 1st.</p>
         </div>
@@ -118,7 +118,7 @@
         title="Pandora Solutions"
       >
         <Globe class="h-6 w-6 sm:h-8 sm:w-8 " />
-        <h2 class="font-semibold text-2xl">Pandora Solutions</h2>
+        <h2 class="font-semibold text-2xl underline">Pandora Solutions</h2>
       </IconLink>
       <p class="italic text-sm text-center">We build high quality software.</p>
     </div>
@@ -140,9 +140,9 @@
         title="Capital One Savor One"
       >
         <CreditCard class="h-6 w-6 sm:h-8 sm:w-8 " />
-        <h2 class="font-semibold text-xl">Capital One Savor One</h2>
+        <h2 class="font-semibold text-xl underline">Capital One Savor One</h2>
       </IconLink>
-      <p class=" italic text-sm text-center">Great starter credit card!</p>
+      <p class=" italic text-sm text-center">Great starter credit card</p>
     </div>
   </div>
 </section>
