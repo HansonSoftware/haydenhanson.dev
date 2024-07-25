@@ -7,7 +7,7 @@ summary: 'Pacman is the package manager on Arch Linux. This guide aims to point 
 
 _This post is a rolling release, it will be added to over time_
 
-**Disclaimer:** This is simply a combination and simplification of documentation and other articles that I have read, I am in no way claiming that this information is groundbreaking or unique.
+**Disclaimer:** This is simply a summary & simplification of documentation and other articles that I have read, none of this information is "mine" in any way. If you're a new Arch user, I highly reccomend [this article](https://wiki.archlinux.org/title/Pacman/Tips_and_tricks).
 
 ## Searching for packages
 
@@ -39,7 +39,11 @@ You can also **upgrade the system** while installing a package with:
 sudo pacman -Syu tmux
 ```
 
-## Removing packages THE RIGHT WAY
+## Removing packages
+
+Let's do this the right way, using only `-R` isn't as good as you may think.
+
+Start using the following:
 
 ```sh
 sudo pacman -Rns tmux
