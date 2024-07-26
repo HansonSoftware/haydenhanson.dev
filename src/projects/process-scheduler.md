@@ -2,7 +2,7 @@
 title: 'Process Scheduler'
 imgUrl: '/images/projects/process-scheduler/final.png'
 completedAt: '2021/10/12'
-summary: 'C program that allows users to schedule tasks from the command line.'
+summary: 'Program that allows users to schedule tasks (other executables) from the command line in an efficient way. Written in C for a systems course.'
 ---
 
 ## Overview

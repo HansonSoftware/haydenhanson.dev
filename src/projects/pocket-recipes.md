@@ -2,7 +2,7 @@
 title: 'Pocket Recipes'
 imgUrl: '/images/projects/pocket-recipes/demo.png'
 completedAt: '06-01-2022'
-summary: 'Calling all chefs! This mobile application built for iPhone and Android has many features.'
+summary: 'Calling all chefs! This mobile application built for iPhone and Android has many features for people like you. Explore recipes and organize them in cookbooks.'
 ---
 
 👨‍🍳 Calling all chefs! Pocket Recipes is a recipe storage application with additional features that make organizing your recipes very easy.

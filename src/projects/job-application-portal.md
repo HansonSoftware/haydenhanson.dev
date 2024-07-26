@@ -2,7 +2,7 @@
 title: 'Job Application Portal'
 imgUrl: '/images/projects/job-application-portal/desktop-login.png'
 completedAt: '2023-06-05'
-summary: 'Mock job application portal built to optimize our universities TA application process for both users and admins.'
+summary: 'Mock job application portal built to optimize our universities TA application process for both users and admins. Type safety from frontend to back.'
 ---
 
 ### Bullet Points:
