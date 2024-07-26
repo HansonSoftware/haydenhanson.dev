@@ -84,7 +84,7 @@
             <BriefcaseBusiness class="h-6 w-6 sm:h-8 sm:w-8 " />
             <h2 class=" font-semibold text-2xl underline">Resume</h2>
           </IconLink>
-          <p class=" italic text-sm indent-2">Last updated June 1st.</p>
+          <p class=" italic text-sm indent-2">Last updated July 26th.</p>
         </div>
       </div>
     </div>
