@@ -35,8 +35,7 @@ export const GET: RequestHandler = async () => {
   // load all projects concurrently
   const projects = await Promise.all(projectPromises);
 
-  // sort by project date (ascending/oldest first)
-  const sortedProjects = projects.sort((project2, project1) => {
+  const sortedProjects = projects.sort((project1, project2) => {
     return (
       new Date(project2.metadata.completedAt).getTime() -
       new Date(project1.metadata.completedAt).getTime()

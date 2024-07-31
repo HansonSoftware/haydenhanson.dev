@@ -6,7 +6,7 @@
 </script>
 
 <header class="p-4">
-  <div class="mb-6 w-full">
+  <div class="mb-6 w-full max-w-2xl">
     <div class="aspect-h-9 aspect-w-16 overflow-hidden rounded-lg">
       {#if metadata.imgUrl}
         <img src={metadata.imgUrl} alt={metadata.title} class="object-cover" />
