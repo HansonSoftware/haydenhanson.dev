@@ -45,7 +45,9 @@
           <Github class="h-6 w-6 sm:h-8 sm:w-8 " />
           <h2 class=" font-semibold text-2xl underline">GitHub</h2>
         </IconLink>
-        <p class=" italic text-sm indent-2">Where all my projects live.</p>
+        <p class="text-center italic text-sm indent-2">
+          Where all my projects live.
+        </p>
       </div>
 
       <div class="flex flex-col gap-0 sm:text-center">
@@ -57,7 +59,7 @@
           <Linkedin class="h-6 w-6 sm:h-8 sm:w-8 " />
           <h2 class=" font-semibold text-2xl underline">LinkedIn</h2>
         </IconLink>
-        <p class=" italic text-sm indent-2">Let's connect!</p>
+        <p class="text-center italic text-sm indent-2">Let's connect!</p>
       </div>
     </div>
 
@@ -72,7 +74,7 @@
             <Mail class="h-6 w-6 sm:h-8 sm:w-8 " />
             <h2 class=" font-semibold text-2xl underline">Email</h2>
           </IconLink>
-          <p class=" italic text-sm indent-2">My developer email.</p>
+          <p class="text-center italic text-sm indent-2">My developer email.</p>
         </div>
 
         <div class="flex flex-col gap-0 sm:text-center">
@@ -84,7 +86,9 @@
             <BriefcaseBusiness class="h-6 w-6 sm:h-8 sm:w-8 " />
             <h2 class=" font-semibold text-2xl underline">Resume</h2>
           </IconLink>
-          <p class=" italic text-sm indent-2">Last updated July 26th.</p>
+          <p class="text-center italic text-sm indent-2">
+            Last updated July 26th.
+          </p>
         </div>
       </div>
     </div>
