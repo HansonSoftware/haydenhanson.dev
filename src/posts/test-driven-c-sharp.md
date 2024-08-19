@@ -11,6 +11,10 @@ I like to learn new programming languages by building an intermediate difficulty
 
 This blogpost is guide on how to set up your own C# test-driven environment for solving leetcode problems.
 
+My remote repository can be found [here](https://github.com/HansonSoftware/cs-neetcode).
+
+[This commit](https://github.com/HansonSoftware/cs-neetcode/commit/9d6952e832c7d4b0a21dde9baea8753e170428b8), labeled `STARTING POINT` is the commit you should start from if you don't want to clone all my solutions!
+
 ## MacOS Specific Instructions
 
 ### 1.1 Install the DOTNET sdk
