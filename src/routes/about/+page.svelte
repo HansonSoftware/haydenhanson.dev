@@ -1,6 +1,5 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  const work: string = 'in Web Dev and AI Training';
 
   import Modal from '$lib/components/Modal.svelte';
   import WorkButton from '$lib/components/WorkButton.svelte';
@@ -51,7 +50,7 @@
       <h2
         class="mx-auto text-center text-xl font-semibold sm:text-left sm:text-2xl"
       >
-        I'm a Software Developer currently working {work}.
+        I'm a Software Developer currently working in Web Development.
       </h2>
       <p>
         I am passionate about beautiful yet minimalistic websites, increasing
@@ -214,6 +213,4 @@
     </div>
     <!-- MODAL GRID -->
   </section>
-
-  <section></section>
 </div>
