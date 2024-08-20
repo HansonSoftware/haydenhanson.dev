@@ -7,7 +7,7 @@ summary: 'Pacman is the package manager on Arch Linux. This guide aims to point 
 
 _This post is a rolling release, it will be added to over time_
 
-**Disclaimer:** This is simply a summary & simplification of documentation and other articles that I have read, none of this information is "mine" in any way. If you're a new Arch user, I highly reccomend [this article](https://wiki.archlinux.org/title/Pacman/Tips_and_tricks).
+**Disclaimer:** This is a summary and simplification of documentation and other articles that I have read. If you're a new Arch user, you will find value in this guide. I highly reccomend [this article](https://wiki.archlinux.org/title/Pacman/Tips_and_tricks) after reading this as well.
 
 ## Updating your system
 
