@@ -6,16 +6,16 @@
 </script>
 
 <header class="p-4">
-  <div class="mb-6 w-full max-w-2xl">
-    <div class="aspect-h-9 aspect-w-16 overflow-hidden rounded-lg">
+  <div class="mb-6 w-full">
+    <div class="aspect-h-9 aspect-w-16 overflow-hidden rounded-md">
       {#if metadata.imgUrl}
-        <img src={metadata.imgUrl} alt={metadata.title} class="object-cover" />
+        <img src={metadata.imgUrl} alt={metadata.title} class="object-fill" />
       {/if}
     </div>
   </div>
 
   <div>
-    <h1 class="mb-4 text-3xl sm:text-4xl font-bold">
+    <h1 class="mb-4 text-2xl sm:text-5xl font-bold">
       {metadata.title}
     </h1>
 

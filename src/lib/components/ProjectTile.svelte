@@ -19,7 +19,7 @@
 
   <div class="flex-1 py-2 sm:py-0">
     <a {href}>
-      <h3 class="mb-1 text-xl sm:text-2xl font-medium">
+      <h3 class="mb-1 text-xl sm:text-2xl font-semibold">
         {project.metadata.title}
       </h3>
 
@@ -27,7 +27,7 @@
         {project.metadata.summary}
       </p>
 
-      <p class="mb-1 text-sm font-bold text-card-foreground">
+      <p class="mb-1 text-sm font-semibold text-card-foreground">
         {'Built with ' +
           project.metadata.technologiesUsed.toString().replaceAll(',', ', ')}
       </p>
