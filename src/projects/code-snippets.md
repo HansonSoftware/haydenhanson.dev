@@ -2,10 +2,12 @@
 title: 'Code Snippets'
 imgUrl: '/images/projects/code-snippets/desktop-multiple-snippets.png'
 completedAt: '2023-06-21'
-summary: 'Save your code snippets with this markdown note taking app!'
+orderId: 2
+technologiesUsed: ['React', 'NextJS', 'tRPC', 'MySQL', 'Prisma', Vercel]
+summary: 'Save your code snippets with this markdown note taking web app! You can organize notes into "Topics" and write anything. Code syntax highlighting built in.'
 ---
 
-This is a crud app that I built in order to save quick notes with markdown.
+This is a CRUD (create, read, update, delete) app that I built in order to save quick notes with markdown.
 
 ## Login Page
 
@@ -15,7 +17,7 @@ This is the login page of the app, for this project I wanted to learn NextAUTH s
 
 ## Mobile Login
 
-Code Snippets is a desktop app! This application is better suited for desktop, as that's where most programming happens. However, I always keep mobile responsiveness in mind, so it is compatible. Here's what it looks like.
+Code Snippets is better suited for desktop screens, as that's where most programming happens. However, I always keep mobile responsiveness in mind, so it is compatible. Here's what it looks like.
 
 ![Mobile Login](/images/projects/code-snippets/mobile-login.png)
 
@@ -27,13 +29,13 @@ Code Snippets is a desktop app! This application is better suited for desktop, a
 
 ![Mobile Example](/images/projects/code-snippets/mobile-example.png)
 
-This page contains the main content for the app. Here you can create a snippet, give it a name and save it under a certain topic for organization's sake.
-
 ## Main Page
+
+This page contains the main content for the app. Here you can create a snippet, give it a name and save it under a certain topic for organization's sake.
 
 ![Desktop Main](/images/projects/code-snippets/desktop-main.png)
 
-Once users login, they are greeted with a blank canvas, and anything that happens here is saved to the database. If you're curious, you can try it out [here](https://code-snippets-com.vercel.app/).
+Once users login, they are greeted with a blank canvas, and anything that happens here is saved to the database. ~~If you're curious, you can try it out [here](https://code-snippets-com.vercel.app/).~~ [As this is a side project, my free remote database is now gone, however you can still clone the repo [here](https://github.com/HansonSoftware/code-snippets) and run it locally...
 
 ## Writing A Snippet
 

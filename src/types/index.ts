@@ -6,6 +6,8 @@ export type MarkdownProject = {
     title: string;
     imgUrl: string;
     completedAt: string;
+    orderId: number;
+    technologiesUsed: string[];
     summary: string;
   };
   default: ComponentType;

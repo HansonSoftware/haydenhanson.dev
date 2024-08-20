@@ -2,6 +2,8 @@
 title: 'Twootr'
 imgUrl: '/images/projects/twootr/feed-desktop.png'
 completedAt: '2023-07-01'
+orderId: 5
+technologiesUsed: ['React', 'NextJS', 'tRPC', 'Supabase', 'Prisma', Vercel]
 summary: 'Twitter/X clone that allows for real time messaging between multiple people.'
 ---
 

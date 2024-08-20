@@ -2,6 +2,8 @@
 title: 'Job Application Portal'
 imgUrl: '/images/projects/job-application-portal/desktop-login.png'
 completedAt: '2023-06-05'
+orderId: 7
+technologiesUsed: ['React', 'NextJS', 'tRPC', 'MySQL', 'Prisma', Vercel]
 summary: 'Mock job application portal built to optimize our universities TA application process for both users and admins. Type safety from frontend to back.'
 ---
 

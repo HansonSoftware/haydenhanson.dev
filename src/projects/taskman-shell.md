@@ -2,6 +2,8 @@
 title: 'Taskman Shell'
 imgUrl: '/images/projects/taskman-shell/final.png'
 completedAt: '2022-04-15'
+orderId: 4
+technologiesUsed: ['C']
 summary: 'Mini UNIX shell that packs quite a bit of functionality.'
 ---
 
