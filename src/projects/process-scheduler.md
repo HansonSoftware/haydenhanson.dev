@@ -10,7 +10,7 @@ summary: 'Program that allows users to schedule tasks (other executables) from t
 ## Overview
 
 My task was to finish a series of functions to implement a feature for the KAIA virtual system.
-I implemented a process scheduler for this virtual machine to let it know which process is the best one to pick next.
+I implemented a process scheduler for this virtual machine to let the system know which process is the best one to pick next.
 
 **C Topics:**
 
@@ -88,7 +88,9 @@ This 32-bit int contains pieces of information that have been combined together 
 
 To build KAIA-VM, run the make command:
 
-`hhanson2@zeus-1:src$ make`
+```sh
+make
+```
 
 KAIA-VM starts up with all of its internal debug messages turned off and with the CS engine off.
 Because of this, when you start it up, you can type in commands to run and nothing will happen! To make them actually run, you need to start the CS engine.

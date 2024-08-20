@@ -7,6 +7,10 @@ technologiesUsed: ['React', 'NextJS', 'tRPC', 'MySQL', 'Prisma', Vercel]
 summary: 'Mock job application portal built to optimize our universities TA application process for both users and admins. Type safety from frontend to back.'
 ---
 
+## Pictures and Overview
+
+_Coming soon!_
+
 ### Bullet Points:
 
 - This is a project a couple fellow CS students and I decided to make for fun.

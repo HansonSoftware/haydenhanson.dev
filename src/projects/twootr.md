@@ -4,14 +4,14 @@ imgUrl: '/images/projects/twootr/feed-desktop.png'
 completedAt: '2023-07-01'
 orderId: 5
 technologiesUsed: ['React', 'NextJS', 'tRPC', 'Supabase', 'Prisma', Vercel]
-summary: 'Twitter/X clone that allows for real time messaging between multiple people.'
+summary: 'Twitter/X clone that allows for real time messaging between multiple people. After signing in, you are met with a feed containing content from other users.'
 ---
 
-I wanted to get practice working with a database that supports real time updates in the cloud.
+I built this clone because wanted to get practice working with a database that supports real time updates in the cloud and test out a new TailwindCSS UI library called DaisyUI.
 
 ## Desktop Feed
 
-This is the homepage of the app, after signing in this is what you're greeted with. Messages from other users are displayed on the left, messages from you are displayed on the right.
+This is the homepage of the app, after signing in this is what you're greeted with. Messages from other users are displayed on the left, messages from you are displayed on the right. Like Twitter, the most recent messages are displayed first.
 
 ![Desktop Feed](/images/projects/twootr/feed-desktop.png)
 
@@ -29,7 +29,7 @@ Mobile-Responsiveness is a necessity in my book. Of course, we have a loading st
 
 ![Posting](/images/projects/twootr/posting-desktop.png)
 
-Any user who is signed in can make a post! If you're reading this, go try it out (database currently not active)! [Twootr](https://twootr-com.vercel.app/). Just type more than one character, up to 280 characters and click post.
+Any user who is signed in can make a post! If you're reading this, go try it out (database currently not active, sorry)! ~~[Twootr](https://twootr-com.vercel.app/)~~. Just type more than one character, up to 280 characters and click post.
 
 ## Your Profile
 
