@@ -30,7 +30,7 @@
     border-b py-2 border-gray-400 dark:border-gray-700"
   >
     <h1 class="text-3xl sm:text-5xl text-center font-semibold">
-      Project Showcase
+      Side Projects
     </h1>
   </header>
 

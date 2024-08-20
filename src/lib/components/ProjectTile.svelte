@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { ProjectMetadataAndSlug } from '../../types';
-  import { formatDate } from '$lib/utils/date';
 
   export let project: ProjectMetadataAndSlug;
 
@@ -20,26 +19,19 @@
 
   <div class="flex-1 py-2 sm:py-0">
     <a {href}>
-      <h3 class="mb-1 text-xl font-medium">
+      <h3 class="mb-1 text-xl sm:text-2xl font-medium">
         {project.metadata.title}
       </h3>
-      <p class="text-gray-60 font-light dark:text-gray-300">
-        <span>Completed on: </span>
-        <time datetime={project.metadata.completedAt}>
-          {formatDate(project.metadata.completedAt)}
-        </time>
-      </p>
 
       <p class="py-2 font-light">
         {project.metadata.summary}
       </p>
-    </a>
 
-    <div
-      class="flex space-x-4 font-light text-gray-600 underline
-          dark:text-gray-300"
-    >
-      <a {href}>Read More</a>
-    </div>
+      <p class="mb-1 text-sm font-bold text-card-foreground">
+        {'Built with ' +
+          project.metadata.technologiesUsed.toString().replaceAll(',', ', ')}
+      </p>
+    </a>
+    <!-- <a class="font-light text-card-foreground underline" {href}>Learn More</a> -->
   </div>
 </article>

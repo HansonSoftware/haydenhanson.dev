@@ -20,7 +20,7 @@
     </h1>
 
     <div class="inline-block border-t py-2 dark:border-gray-700">
-      <span>Completed On: </span>
+      <span>Completed: </span>
       <time class="font-light" datetime={metadata.completedAt}>
         {formatDate(metadata.completedAt)}
       </time>

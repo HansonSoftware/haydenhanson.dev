@@ -36,10 +36,7 @@ export const GET: RequestHandler = async () => {
   const projects = await Promise.all(projectPromises);
 
   const sortedProjects = projects.sort((project1, project2) => {
-    return (
-      new Date(project2.metadata.completedAt).getTime() -
-      new Date(project1.metadata.completedAt).getTime()
-    );
+    return project1.metadata.orderId - project2.metadata.orderId;
   });
 
   return json(sortedProjects);
