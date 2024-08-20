@@ -1,5 +1,5 @@
 ---
-title: 'Test-Driven C Sharp'
+title: 'Test-Driven C# for Leetcode'
 imgUrl: '/images/posts/test-driven-c-sharp/thumbnail.png'
 publishedAt: '2024-08-19'
 summary: 'This is a tutorial for setting up a TDD envirnoment with C# for solving leetcode problems on your own machine. This guide includes instructions for both Linux & MacOS, lets learn together!'
@@ -194,4 +194,4 @@ dotnet test
 
 ![dotnet test](/images/posts/test-driven-c-sharp/example.png)
 
-## Thanks for reading!
+## _Thanks for reading!_
