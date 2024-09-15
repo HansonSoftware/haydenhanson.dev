@@ -46,7 +46,7 @@
   class="fixed inset-x-0 z-50 mx-auto mt-6 flex h-16 w-fit items-center justify-between
 	rounded-3xl border border-crust bg-background backdrop-blur-3xl dark:bg-transparent
 	transition-transform ease-in sm:justify-center gap-4 sm:gap-8 px-4 sm:px-12"
-  class:motion-safe:-translate-y-24={offscreen}
+  class:offscreen
   bind:clientHeight
 >
   {#each links as { title, href }}
@@ -80,6 +80,14 @@
 </nav>
 
 <style lang="postcss">
+  nav {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .offscreen {
+    transform: translateY(-140%);
+  }
+
   .active {
     color: theme(colors.primary);
     font-weight: 525;
