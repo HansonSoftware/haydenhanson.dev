@@ -7,13 +7,9 @@ summary: 'This is a tutorial for setting up a TDD envirnoment with C# for solvin
 
 # Introduction
 
-I like to learn new programming languages by building an intermediate difficulty project, like a web server for example. However, before we can jump into something like that I find it best to solve about 20 leetcode problems with the language so that you learn some tricks and the syntax for the language. I personally use [Neetcode](https://neetcode.io/roadmap) and work through the roadmap.
+I like to learn new programming languages by building an intermediate difficulty project, like a web server for example. However, before jumping into something like that I find it best to solve about 20 leetcode problems with the language so that I learn the syntax for the language and some tricks. I personally use [Neetcode](https://neetcode.io/roadmap) and work through the roadmap.
 
-This blogpost is guide on how to set up your own C# test-driven environment for solving leetcode problems.
-
-My remote repository can be found [here](https://github.com/HansonSoftware/cs-neetcode).
-
-[This commit](https://github.com/HansonSoftware/cs-neetcode/commit/9d6952e832c7d4b0a21dde9baea8753e170428b8), labeled `STARTING POINT` is the commit you should start from if you don't want to clone all my solutions!
+This blogpost is guide on how to set up your own C# test-driven environment for solving leetcode problems locally, I personally prefer to do it this way so that I can use the terminal.
 
 ## MacOS Specific Instructions
 
@@ -230,5 +226,9 @@ dotnet test
 ```
 
 ![dotnet test](/images/posts/test-driven-c-sharp/example.png)
+
+### Git Repository
+
+My remote repository can be found [here](https://github.com/HansonSoftware/cs-neetcode). Use [this commit](https://github.com/HansonSoftware/cs-neetcode/commit/9d6952e832c7d4b0a21dde9baea8753e170428b8) to avoid cloning all my solutions.
 
 ## _Thanks for reading!_
