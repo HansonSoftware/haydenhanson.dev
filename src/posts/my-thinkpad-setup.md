@@ -7,9 +7,9 @@ summary: 'This is an overview of my 2018 ThinkPad T480. Here I explain what modi
 
 ## The Last Great ThinkPad.
 
-Many say that the T480 is the last great ThinkPad model. Its number of useful ports, compatability with linux, the TrackPoint and upgradability are all reasons why I agree! In this post I go over the software I run on mine.
+Many say that the T480 is the last great ThinkPad model. The number of useful ports, compatability with linux, the TrackPoint and upgradability are all reasons why I agree! In this post I go over the software I run on mine.
 
-## Software
+## System Overview
 
 - **OS**: Arch Linux
 - **Encryption**: LUKS
@@ -83,4 +83,4 @@ I use this [Spotify TUI](https://github.com/aome510/spotify-player), it is **fan
 
 I am using the **ThinkPad T480** 14.0" FHD Touchscreen with an i5-8350U CPU, 16GB DDR4 RAM and a fingerprint reader. I got it refurbished from Amazon for around $200.
 
-The only problem when I got it was that the battery life was _horrible_. I upgraded the external battery to a 72WH battery to fix this.
+The only problem when I got it was that the battery life was _horrible_. I upgraded the external battery to a 72WH battery to fix this and it's been great since!
