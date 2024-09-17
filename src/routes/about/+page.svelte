@@ -50,17 +50,20 @@
       <h2
         class="mx-auto text-center text-xl font-semibold sm:text-left sm:text-2xl"
       >
-        I'm a Software Developer currently working in Web Development.
+        Software Developer currently working in Mobile App Development at
+        <a href="https://www.indexarsolutions.com/" class="hover:underline"
+          >Index</a
+        >.
       </h2>
-      <p>
-        I am passionate about beautiful yet minimalistic websites, increasing
-        server performance, developer workflows, problem solving and Linux. Most
-        importantly, I love to learn!
+      <p class="indent-4 sm:indent-0">
+        I am passionate about beautiful yet minimalistic websites, developer
+        workflows, problem solving, Linux and digital privacy. Most importantly,
+        I love to learn!
       </p>
-      <p>
+      <p class="indent-4 sm:indent-0">
         This site is meant to be my little corner of the internet, I update it
         from time to time. I recently started to blog about computer science
-        topics, books and software/hardware.
+        topics, books and software.
       </p>
     </div>
   </section>
