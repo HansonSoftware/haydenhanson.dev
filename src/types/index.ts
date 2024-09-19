@@ -24,6 +24,7 @@ export type MarkdownPost = {
     title: string;
     imgUrl: string;
     publishedAt: string;
+    readTime: string;
     summary: string;
   };
   default: ComponentType;
