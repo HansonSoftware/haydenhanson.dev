@@ -51,8 +51,10 @@
         class="mx-auto text-center text-xl font-semibold sm:text-left sm:text-2xl"
       >
         Software Developer currently working in Mobile App Development at
-        <a href="https://www.indexarsolutions.com/" class="hover:underline"
-          >Index</a
+        <a
+          target="_blank"
+          href="https://www.indexarsolutions.com/"
+          class="hover:underline">Index</a
         >.
       </h2>
       <p class="indent-4 sm:indent-0">
