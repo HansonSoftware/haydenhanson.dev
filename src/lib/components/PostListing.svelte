@@ -20,7 +20,7 @@
 
   <div class="flex-1 py-2 sm:py-0">
     <a {href}>
-      <h3 class="mb-1 text-xl font-medium">
+      <h3 class="mb-1 text-xl font-semibold">
         {post.metadata.title}
       </h3>
       <p class="text-gray-60 font-light dark:text-gray-300">
@@ -28,6 +28,13 @@
         <time datetime={post.metadata.publishedAt}>
           {formatDate(post.metadata.publishedAt)}
         </time>
+      </p>
+
+      <p class="text-gray-60 font-light dark:text-gray-300">
+        <span>Read Time: </span>
+        <span class="font-light">
+          {post.metadata.readTime}
+        </span>
       </p>
 
       <p class="py-2 font-light">
