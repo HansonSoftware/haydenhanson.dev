@@ -1,7 +1,8 @@
 ---
-title: 'Test-Driven C# for Leetcode'
+title: 'Test-Driven C#'
 imgUrl: '/images/posts/test-driven-c-sharp/thumbnail.png'
 publishedAt: '2024-08-19'
+readTime: '8 minutes'
 summary: 'This is a tutorial for setting up a TDD envirnoment with C# for solving leetcode problems locally on Linux or MacOS, lets learn together!'
 ---
 

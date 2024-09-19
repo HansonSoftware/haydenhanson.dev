@@ -2,6 +2,7 @@
 title: 'Useful Pacman Tips'
 imgUrl: '/images/posts/useful-pacman-tips/pacman.jpg'
 publishedAt: '2024-07-24'
+readTime: '6 minutes'
 summary: 'Pacman is the package manager on Arch Linux. This guide aims to point out some useful Pacman commands and explain them in a simple way.'
 ---
 

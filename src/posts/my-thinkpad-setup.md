@@ -2,6 +2,7 @@
 title: 'My ThinkPad Setup'
 imgUrl: '/images/posts/my-thinkpad-setup/laptop.jpg'
 publishedAt: '2024-08-01'
+readTime: '6 minutes'
 summary: 'This is an overview of my 2018 ThinkPad T480. Here I explain what modifications I have made and how I set up my development workflow.'
 ---
 
