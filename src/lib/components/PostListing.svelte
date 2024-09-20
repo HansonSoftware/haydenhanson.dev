@@ -20,7 +20,7 @@
 
   <div class="flex-1 py-2 sm:py-0">
     <a {href}>
-      <h3 class="mb-1 text-xl font-semibold">
+      <h3 class="mb-1 text-2xl font-semibold">
         {post.metadata.title}
       </h3>
       <p class="text-gray-60 font-light dark:text-gray-300">
