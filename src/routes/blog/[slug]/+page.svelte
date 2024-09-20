@@ -1,9 +1,9 @@
 <script lang="ts">
-  import '../../../prism/prism-night-owl.css';
+  import './theme.css';
+  import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
   import type { PageData } from './$types';
   import CopyCodeInjector from '$lib/components/CopyCodeInjector.svelte';
   import PostHeader from '$lib/components/PostHeader.svelte';
-  import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
   import { page } from '$app/stores';
 
   export let data: PageData;
@@ -25,7 +25,7 @@
   <PostHeader {metadata} />
 
   <div
-    class="max-w-none px-4 py-4 dark:prose-invert prose md:prose-lg prose-headings:text-foreground prose-p:text-foreground"
+    class="max-w-none px-4 py-4 prose-code:before:content-none prose-code:after:content-none dark:prose-invert prose md:prose-lg prose-headings:text-foreground prose-p:text-foreground"
   >
     <CopyCodeInjector>
       <Post />
