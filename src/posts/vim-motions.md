@@ -14,8 +14,13 @@ Using vim almost turns writing code into a game for me - I'm always thinking of 
 
 ## How do I exit vim?
 
-| Motion     | Description    |
-| ---------- | -------------- |
-| <b>:wq</b> | Write and Quit |
+| Motion   | Description                                |
+| -------- | ------------------------------------------ |
+| **:wq**  | **Write** and **Quit**                     |
+| **:w**   | **Write** file without quitting            |
+| **:wa**  | **Write** all open files without quitting  |
+| **:q**   | **Quit** but fail if unsaved changes exist |
+| **:q!**  | **Quit** and discard unsaved changes       |
+| **:wqa** | **Write** and **Quit** on all open files   |
 
-If for some reason someone is reading this right now, I'm going to finish it soon! Currently making a huge list of all the commands I know and cross referencing it with another list.
+_If for some reason someone is reading this right now, I'm going to finish it soon! I'm currently making a huge list of all the commands I know and cross referencing it with another list._
