@@ -74,21 +74,19 @@
             <Mail class="h-6 w-6 sm:h-8 sm:w-8 " />
             <h2 class=" font-semibold text-2xl underline">Email</h2>
           </IconLink>
-          <p class="text-center italic text-sm indent-2">My developer email.</p>
+          <p class="text-center italic text-sm indent-2">Shoot me an email.</p>
         </div>
 
-        <div class="flex flex-col gap-0 sm:text-center">
+        <div class="flex flex-col gap-0 text-center">
           <IconLink
-            href="/Hayden_Hanson_Resume.pdf"
+            href="https://pandorasolutions.co"
             target="_blank"
-            title="Resume"
+            title="Pandora Solutions"
           >
-            <BriefcaseBusiness class="h-6 w-6 sm:h-8 sm:w-8 " />
-            <h2 class=" font-semibold text-2xl underline">Resume</h2>
+            <Globe class="h-6 w-6 sm:h-8 sm:w-8 " />
+            <h2 class="font-semibold text-2xl underline">Freelance</h2>
           </IconLink>
-          <p class="text-center italic text-sm indent-2">
-            Last updated July 26th.
-          </p>
+          <p class="italic text-sm text-center">Need a website?</p>
         </div>
       </div>
     </div>
@@ -103,36 +101,25 @@
 </section>
 
 <!-- END CONTACT LINKS -->
-<!-- START FREELANCE -->
+
+<!-- <section class="pt-12 grid place-items-center place-content-center max-w-5xl"> -->
+<!--   <header class="w-fit flex items-center border-b py-2 border-crust"> -->
+<!--     <h1 -->
+<!--       class="text-4xl sm:text-5xl text-center font-semibold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent" -->
+<!--     > -->
+<!--       Section Header -->
+<!--     </h1> -->
+<!--   </header> -->
+<!---->
+<!--   <div class="flex flex-col gap-4 pt-4 justify-center items-center"></div> -->
+<!-- </section> -->
 
 <section class="pt-12 grid place-items-center place-content-center max-w-5xl">
-  <header class="w-fit flex items-center border-b py-2 border-crust">
+  <header class="w-fit flex flex-col items-center border-b py-2 border-crust">
     <h1
-      class="text-4xl sm:text-5xl text-center font-semibold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent"
+      class="text-3xl sm:text-4xl text-center font-semibold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent"
     >
-      Business
-    </h1>
-  </header>
-
-  <div class="flex flex-col gap-4 pt-4 justify-center items-center">
-    <div class="flex flex-col gap-0 text-center">
-      <IconLink
-        href="https://pandorasolutions.co"
-        target="_blank"
-        title="Pandora Solutions"
-      >
-        <Globe class="h-6 w-6 sm:h-8 sm:w-8 " />
-        <h2 class="font-semibold text-2xl underline">Pandora Solutions</h2>
-      </IconLink>
-      <p class="italic text-sm text-center">We build high quality software.</p>
-    </div>
-  </div>
-</section>
-
-<section class="pt-12 grid place-items-center place-content-center max-w-5xl">
-  <header class="w-fit flex items-center border-b py-2 border-crust">
-    <h1 class="text-3xl sm:text-4xl text-center font-semibold">
-      Referral Links
+      Other Links
     </h1>
   </header>
 
@@ -141,12 +128,15 @@
       <IconLink
         href="https://i.capitalone.com/JQ9r0SIcT"
         target="_blank"
-        title="Capital One Savor One"
+        title="Capital One Savor One Referral"
       >
         <CreditCard class="h-6 w-6 sm:h-8 sm:w-8 " />
         <h2 class="font-semibold text-xl underline">Capital One Savor One</h2>
       </IconLink>
-      <p class=" italic text-sm text-center">Great starter credit card</p>
     </div>
+
+    <p class="italic text-sm text-center">
+      This is mainly here so I can easily share these links with my friends.
+    </p>
   </div>
 </section>
