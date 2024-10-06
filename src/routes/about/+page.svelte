@@ -7,6 +7,7 @@
     { showModal: false },
     { showModal: false },
     { showModal: false },
+    { showModal: false },
     { showModal: false }
   ];
 
@@ -72,9 +73,9 @@
 
   <section class="flex flex-col items-center justify-center pt-12">
     <header class="w-fit flex items-center border-b py-2 border-crust">
-      <h1 class="text-4xl sm:text-5xl text-center font-semibold">
+      <h2 class="text-4xl sm:text-5xl text-center font-semibold">
         Work History
-      </h1>
+      </h2>
     </header>
 
     <!-- MODAL GRID -->
@@ -82,12 +83,43 @@
       <WorkButton
         {toggleModal}
         i={0}
+        jobTitle="Application Engineer"
+        company="Index AR Solutions"
+        datesWorked="Sep 2024 - Present"
+      />
+
+      <Modal bind:showModal={modals[0].showModal}>
+        <h2
+          class="text-xl font-semibold border-b border-foreground text-center"
+          slot="header"
+        >
+          As an Application Engineer I...
+        </h2>
+
+        <ol class="list-disc space-y-2">
+          <li>
+            Work closely with and travel out to clients in order to bring their
+            ideas to life in our mobile applications.
+          </li>
+          <li>
+            Program in C# to implement unique solutions for mobile applications
+            tailored for multiple platforms.
+          </li>
+          <li>
+            Maintain many git repositories, utilizing conventional commits and
+            semantic versioning. Merge pull requests in bitbucket with my team.
+          </li>
+        </ol>
+      </Modal>
+      <WorkButton
+        {toggleModal}
+        i={1}
         jobTitle="Software Developer Intern"
         company="DevX"
         datesWorked="Jan 2024 - May 2024"
       />
 
-      <Modal bind:showModal={modals[0].showModal}>
+      <Modal bind:showModal={modals[1].showModal}>
         <h2
           class="text-xl font-semibold border-b border-foreground text-center"
           slot="header"
@@ -113,13 +145,13 @@
 
       <WorkButton
         {toggleModal}
-        i={1}
+        i={2}
         jobTitle="Teaching Assistant"
         company="GMU"
         datesWorked="Aug 2022 - May 2024"
       />
 
-      <Modal bind:showModal={modals[1].showModal}>
+      <Modal bind:showModal={modals[2].showModal}>
         <h2
           class="text-xl font-semibold border-b border-foreground text-center"
           slot="header"
@@ -151,13 +183,13 @@
 
       <WorkButton
         {toggleModal}
-        i={2}
+        i={3}
         jobTitle="Research Assistant"
         company="DevX"
         datesWorked="June 2023 - Aug 2023"
       />
 
-      <Modal bind:showModal={modals[2].showModal}>
+      <Modal bind:showModal={modals[3].showModal}>
         <h2
           class="text-xl font-semibold border-b border-foreground text-center"
           slot="header"
@@ -187,13 +219,13 @@
 
       <WorkButton
         {toggleModal}
-        i={3}
+        i={4}
         jobTitle="Web Developer"
         company="Pandora Solutions"
         datesWorked="Freelance"
       />
 
-      <Modal bind:showModal={modals[3].showModal}>
+      <Modal bind:showModal={modals[4].showModal}>
         <h2
           class="text-xl font-semibold border-b border-foreground text-center"
           slot="header"
