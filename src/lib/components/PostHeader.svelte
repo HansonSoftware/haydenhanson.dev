@@ -25,13 +25,27 @@
         {formatDate(metadata.publishedAt)}
       </time>
     </div>
+
     <br />
 
-    <div class="inline-block border-b py-2 dark:border-gray-700">
+    <div class="inline-block py-2">
       <b>Read Time: </b>
       <span class="font-light">
         {metadata.readTime}
       </span>
+    </div>
+
+    <br />
+
+    <div
+      class="flex flex-row gap-2 justify-start items-center border-b pt-1 pb-2 dark:border-gray-700"
+    >
+      <img
+        class="rounded-full max-w-8 border dark:border-gray-700"
+        src="/favicon.png"
+        alt="Hayden Hanson"
+      />
+      <span class="font-light"> Hayden Hanson</span>
     </div>
   </div>
 </header>
