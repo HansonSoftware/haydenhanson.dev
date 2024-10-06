@@ -74,6 +74,18 @@ Now, if you're a chad, you exit Vim like this:
 | **k**   | Move cursor up                           |
 | **l**   | Move cursor right (right most)           |
 
+Useful tip for noobs, you will likely want to use the arrow keys when you first start. To stop yourself from doing that you can add this line to your config, which quickly helped me get better.
+
+```sh
+local keymap = vim.keymap
+
+-- TIP: Disable arrow keys in normal mode
+keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
+keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
+keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
+keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
+```
+
 ## Movements Within A Line
 
 **Mode:** `NORMAL`
@@ -150,6 +162,6 @@ A **sentence** ends with a ".", "!" or "?" followed by the end of the line, a sp
 
 ### Sources:
 
-- [Vim Cheatsheet](https://vim.rtorr.com/)
+<a href="https://vim.rtorr.com/" target="_blank">Vim Cheatsheet</a>,
 
-- [Josean's Blogpost](https://www.josean.com/posts/vim-essentials-cheatsheet)
+<a href="https://www.josean.com/posts/vim-essentials-cheatsheet" target="_blank">Josean Martinez's Blogpost</a>
