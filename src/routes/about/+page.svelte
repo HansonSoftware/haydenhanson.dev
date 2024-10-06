@@ -14,6 +14,34 @@
   function toggleModal(index: number) {
     modals[index].showModal = !modals[index].showModal;
   }
+
+  function toggleAccordion(index: number) {
+    const content = document.getElementById(`content-${index}`);
+    const icon = document.getElementById(`icon-${index}`);
+
+    // SVG for Minus icon
+    const minusSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+      </svg>
+    `;
+
+    // SVG for Plus icon
+    const plusSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+        <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+      </svg>
+    `;
+
+    // Toggle the content's max-height for smooth opening and closing
+    if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+      content.style.maxHeight = '0';
+      icon.innerHTML = plusSVG;
+    } else {
+      content.style.maxHeight = content.scrollHeight + 'px';
+      icon.innerHTML = minusSVG;
+    }
+  }
 </script>
 
 <svelte:head>
@@ -249,5 +277,232 @@
       </Modal>
     </div>
     <!-- MODAL GRID -->
+  </section>
+
+  <section
+    class="flex flex-col w-full items-center max-w-4xl justify-center pt-12"
+  >
+    <header class="w-fit flex items-center border-b py-2 border-crust">
+      <h2 class="text-4xl sm:text-5xl text-center font-semibold">Uses</h2>
+    </header>
+
+    <p class="p-4 text-lg md:text-xl max-w-3xl indent-4 md:indent-8">
+      I have spent countless hours tweaking my computer hardware and software to
+      be tailored to my liking. This section of my website is dedicated to
+      explaining my development environment, which is entirely motivated by <span
+        class="bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent"
+        >efficiency</span
+      >.
+    </p>
+
+    <div
+      class="text-3xl max-w-3xl flex flex-col p-4 justify-start w-full hover:text-popover"
+    >
+      <!-- Hardware -->
+      <div class="hover:text-foreground">
+        <button
+          on:click={() => toggleAccordion(1)}
+          class="w-full flex border-b border-popover justify-between items-center py-5 font-bold"
+        >
+          <!-- Header -->
+          <span>Hardware</span>
+          <span id="icon-1" class="transition-transform duration-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          id="content-1"
+          class="max-h-0 overflow-hidden transition-all pt-4 duration-300 ease-in-out"
+        >
+          <!-- Content -->
+          <div class="pb-5 text-lg">
+            <ul class="flex flex-col gap-2">
+              <span>
+                <li class="text-xl font-semibold">Desktop:</li>
+                <ul class="list-disc ml-8">
+                  <li>Ryzen 7 5700x</li>
+                  <li>Nvidia RTX 3060ti</li>
+                  <li>32GB Corsair Vengance DDR4 RAM</li>
+                  <li>Asrock B450M Steel Legend</li>
+                  <li>4TB SSD Storage</li>
+                  <li>4TB HDD Storage</li>
+                </ul>
+              </span>
+
+              <span>
+                <li class="text-xl font-semibold">Laptops:</li>
+                <ul class="list-disc ml-8">
+                  <li>Thinkpad T480</li>
+                  <li>M1 Macbook Pro</li>
+                </ul>
+              </span>
+
+              <span>
+                <li class="text-xl font-semibold">Keyboards:</li>
+                <ul class="list-disc ml-8">
+                  <li>Keychron Q1 Pro</li>
+                  <li>Corne v4 MX (currently building!)</li>
+                </ul>
+              </span>
+
+              <span>
+                <li class="text-xl font-semibold">Mice:</li>
+                <ul class="list-disc ml-8">
+                  <li>Logitech GPro Superlight</li>
+                  <li>Glorious Model O</li>
+                  <li>Corsair M65 Wireless Mouse</li>
+                </ul>
+              </span>
+
+              <span>
+                <li class="text-xl font-semibold">Chair:</li>
+                <ul class="list-disc ml-8">
+                  <li>Herman Miller Caper</li>
+                </ul>
+              </span>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Software -->
+      <div class="hover:text-foreground">
+        <button
+          on:click={() => toggleAccordion(2)}
+          class="w-full flex border-b border-popover justify-between items-center py-5 font-bold"
+        >
+          <!-- Header -->
+          <span>Software</span>
+          <span id="icon-2" class="transition-transform duration-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          id="content-2"
+          class="max-h-0 overflow-hidden transition-all pt-4 duration-300 ease-in-out"
+        >
+          <!-- Content -->
+          <div class="pb-5 text-lg">
+            <ul class="flex flex-col gap-2">
+              <span>
+                <li class="text-xl font-semibold">Operating System:</li>
+                <ul class="list-disc ml-8">
+                  <li>Arch Linux</li>
+                </ul>
+              </span>
+
+              <span>
+                <li class="text-xl font-semibold">DE's / WM's:</li>
+                <ul class="list-disc ml-8">
+                  <li>KDE</li>
+                  <li>Hyprland</li>
+                </ul>
+              </span>
+
+              <span>
+                <li class="text-xl font-semibold">Terminal:</li>
+                <ul class="list-disc ml-8">
+                  <li>Alacritty</li>
+                </ul>
+              </span>
+
+              <span>
+                <li class="text-xl font-semibold">Browsers:</li>
+                <ul class="list-disc ml-8">
+                  <li>Brave</li>
+                  <li>Firefox with custom User.js</li>
+                </ul>
+              </span>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Applications -->
+      <div class="hover:text-foreground">
+        <button
+          on:click={() => toggleAccordion(3)}
+          class="w-full flex border-b border-popover justify-between items-center py-5 font-bold"
+        >
+          <!-- Header -->
+          <span>Applications</span>
+          <span id="icon-3" class="transition-transform duration-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          id="content-3"
+          class="max-h-0 overflow-hidden transition-all pt-4 duration-300 ease-in-out"
+        >
+          <!-- Content -->
+          <div class="pb-5 text-lg">
+            <ul class="flex flex-col gap-2">
+              <span>
+                <li class="text-xl font-semibold">Text Editor:</li>
+                <ul class="list-disc ml-8">
+                  <li>Neovim</li>
+                </ul>
+              </span>
+
+              <span>
+                <li class="text-xl font-semibold">Terminal Multiplexer:</li>
+                <ul class="list-disc ml-8">
+                  <li>Tmux</li>
+                </ul>
+              </span>
+
+              <span>
+                <li class="text-xl font-semibold">Git TUI:</li>
+                <ul class="list-disc ml-8">
+                  <li>Lazygit</li>
+                </ul>
+              </span>
+
+              <span>
+                <li class="text-xl font-semibold">Notes:</li>
+                <ul class="list-disc ml-8">
+                  <li>Obsidian</li>
+                </ul>
+              </span>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <em class="pt-8 text-center"
+      >Check out my <a
+        href="https://github.com/HansonSoftware/dotfiles"
+        target="_blank"
+        class="text-primary hover:underline">dotfiles</a
+      >!</em
+    >
   </section>
 </div>
