@@ -143,20 +143,20 @@ A **sentence** ends with a ".", "!" or "?" followed by the end of the line, a sp
 
 ## Moving To Specific Lines
 
-**Note**: Replace `number` with an actual number.
-
 **Mode:** `Normal`
 
-| Command     | Description                                         |
-| ----------- | --------------------------------------------------- |
-| **gg**      | Move cursor to first line of document               |
-| **G**       | Move cursor to last line of document                |
-| **numberG** | Move cursor to line `number`                        |
-| **numberj** | Go `number` lines down                              |
-| **numberk** | Go `number` lines up                                |
-| **H**       | Move cursor to line at the top of the window        |
-| **M**       | Move cursor to the line at the middle of the window |
-| **L**       | Move cursor to the line at the bottom of the window |
+**Note**: Replace `#` with an actual number.
+
+| Command | Description                                         |
+| ------- | --------------------------------------------------- |
+| **gg**  | Move cursor to first line of document               |
+| **G**   | Move cursor to last line of document                |
+| **#G**  | Move cursor to line **#**                           |
+| **#j**  | Go **#** lines down                                 |
+| **#k**  | Go **#** lines up                                   |
+| **H**   | Move cursor to line at the top of the window        |
+| **M**   | Move cursor to the line at the middle of the window |
+| **L**   | Move cursor to the line at the bottom of the window |
 
 ## Thanks for reading!
 
