@@ -10,11 +10,13 @@ summary: 'This is a tutorial for setting up a TDD envirnoment with C# for solvin
 
 I like to learn new programming languages by building an intermediate difficulty project, like a web server for example. However, before jumping into something like that I find it best to solve about 20 leetcode problems with the language so that I learn the syntax for the language and some tricks. I personally use [Neetcode](https://neetcode.io/roadmap) and work through the roadmap.
 
-This blogpost is guide on how to set up your own C# test-driven environment for solving leetcode problems locally, I personally prefer to do it this way so that I can use the terminal.
+This blogpost is guide on how to set up your own C# test-driven environment for solving leetcode problems locally, I personally prefer to do it this way so that I can use my terminal.
 
 ## MacOS Specific Instructions
 
 ### 1.1 Install the DOTNET sdk
+
+#### How? With Homebrew.
 
 If you don't have homebrew, install it. It's a great package manager for MacOS.
 
@@ -31,7 +33,7 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-Now we're ready to install the .NET sdk.
+**Now we're ready to install the .NET sdk.**
 
 ```sh
 brew install --cask dotnet-sdk
@@ -43,7 +45,7 @@ brew install --cask dotnet-sdk
 
 Install `dotnet` with your distros package manager.
 
-I use Arch (btw) so I'll install it using pacman.
+I use Arch Linux, so I'll install it using pacman.
 
 ```sh
 sudo pacman -S dotnet-runtime dotnet-sdk
@@ -51,18 +53,27 @@ sudo pacman -S dotnet-runtime dotnet-sdk
 
 ## The rest of the instructions are for both Linux and MacOS
 
-### 1.2 Create Git Repository
+### 1.2 Create a Git Repository
+
+**Note:** If you're just here to get started right away, clone this repository from this commit. There are 20 problems set up with unit tests written. You can solve the problems and test your code as you go. _More info on testing at the bottom._
+
+#### For those following along:
 
 I'm going to call mine cs-neetcode.
 
 ```sh
 mkdir cs-neetcode && cd cs-neetcode
+
 git init
+touch .gitignore
+echo "bin/\nobj/" >> .gitignore
 ```
+
+This will create your local repository, and add the bin and obj directories to the gitignore.
 
 ### 1.3 Modular File System
 
-The repository is designed as follows:
+The repository will look like this after we're finished:
 
 ```sh
 cs-neetcode/
@@ -75,21 +86,27 @@ cs-neetcode/
 │   ├── ValidAnagram.cs
 │   └── ValidAnagramTests.cs
 │
+├── Etc.../
+│
 ├── cs-neetcode.sln
 └── .gitignore
 ```
 
-You will have a unique directory for each problem you solve.
+There will be a unique directory for each problem you want to solve.
 
-Now, create a solution file for the entire project:
+**Create a dotnet project and a solution file:**
 
 > Run this command from the root directory of the repository.
 
 ```sh
+dotnet new console -n cs-neetcode
+
 dotnet new sln -n cs-neetcode
 ```
 
 ### 1.4 Preparing Solution Directories
+
+#### Before using these commands, read this entire section. There is a useful sh script at the end that will automate this process.
 
 For each problem, create a new class library and a corresponding test project.
 
@@ -117,78 +134,107 @@ dotnet add TwoSum.Tests/TwoSum.Tests.csproj reference TwoSum/TwoSum.csproj
 
 **I have automated this process with the following shell script:**
 
+**add_problem.sh**
+
 ```sh
 #!/bin/sh
 
-# add_project.sh
+# Run this script from the root directory of your dotnet project.
 
-#####################################
-# Run this script from cs-neetcode/ #
-#####################################
+###########################################
+# Add new problem to solve to the project #
+###########################################
 
 # Get the problem name
 echo "Enter the problem name (e.g., TwoSum):"
 read PROBLEM_NAME
 
 # Create the class library project
+echo "Creating new classlib for $PROBLEM_NAME..."
 dotnet new classlib -n "$PROBLEM_NAME" -o "$PROBLEM_NAME"
+echo "New classlib created for $PROBLEM_NAME."
 
 # Create the xUnit test project
-dotnet new xunit -n "${PROBLEM_NAME}.Tests" -o "${PROBLEM_NAME}.Tests"
+echo "Creating new xunit for $PROBLEM_NAME..."
+dotnet new xunit -n "$PROBLEM_NAME.Tests" -o "$PROBLEM_NAME.Tests"
+echo "New xunit created for $PROBLEM_NAME."
 
 # Add projects to the solution
+echo "Adding the projects to the root sln..."
 dotnet sln add "$PROBLEM_NAME/$PROBLEM_NAME.csproj"
-dotnet sln add "${PROBLEM_NAME}.Tests/${PROBLEM_NAME}.Tests.csproj"
+dotnet sln add "$PROBLEM_NAME.Tests/$PROBLEM_NAME.Tests.csproj"
+echo "Successfully added the projects to the root sln."
 
 # Add reference from the test project to the class library project
+echo "Adding a reference for xunit to the classlib..."
 dotnet add "${PROBLEM_NAME}.Tests/${PROBLEM_NAME}.Tests.csproj" reference "$PROBLEM_NAME/$PROBLEM_NAME.csproj"
+echo "Successfully added a reference for xunit to the classlib..."
 
+################################################
+# Populate the default files with problem name #
+################################################
+
+# REFACTORING CLASSLIB FILES
+echo "Refactoring the classlib files..."
+cd $PROBLEM_NAME
+
+defaultFile="$(find Class1.cs)"
+
+if [ "$defaultFile" = "Class1.cs" ]; then
+	# Remove the default file generated
+	rm $defaultFile
+
+	# Create new file and populate
+	touch "$PROBLEM_NAME.cs"
+
+	# Preview to terminal
+	echo "public class ${PROBLEM_NAME}Solver\n{\n  public void ${PROBLEM_NAME}()\n  {\n    // Your implementation here...\n    throw new ArgumentException(\"No ContainsDuplicate solution\");\n  }\n}\n"
+	# Write to file
+	echo "public class ${PROBLEM_NAME}Solver\n{\n  public void ${PROBLEM_NAME}()\n  {\n    // Your implementation here...\n    throw new ArgumentException(\"No ContainsDuplicate solution\");\n  }\n}\n" >> "${PROBLEM_NAME}.cs"
+fi
+
+echo "Done."
+
+# REFACTORING TESTING FILES
+echo "Refactoring the xunit files..."
+
+cd "../${PROBLEM_NAME}.Tests"
+
+PROBLEM_NAME_TESTS="${PROBLEM_NAME}Tests"
+
+defaultTestFile="$(find UnitTest1.cs)"
+
+if [ "$defaultTestFile" = "UnitTest1.cs" ]; then
+	# Remove the default file generated
+	rm $defaultTestFile
+
+	# Create new file and populate
+	touch "${PROBLEM_NAME_TESTS}.cs"
+
+	# Preview to terminal
+	echo "using Xunit;\n\nnamespace ${PROBLEM_NAME}.Tests\n{\n  public class ${PROBLEM_NAME_TESTS}\n  {\n    [Fact]\n    public void Test${PROBLEM_NAME}()\n    {\n    }\n  }\n}\n"
+	# Write to file
+	echo "using Xunit;\n\nnamespace ${PROBLEM_NAME}.Tests\n{\n  public class ${PROBLEM_NAME_TESTS}\n  {\n    [Fact]\n    public void Test${PROBLEM_NAME}()\n    {\n    }\n  }\n}\n" >> "${PROBLEM_NAME_TESTS}.cs"
+fi
+
+echo "Done."
+
+# Return back to the root directory
+cd ".."
+
+# Exit script gracefully
 echo "Setup complete. Solution '$PROBLEM_NAME.sln' created with projects '$PROBLEM_NAME' and '${PROBLEM_NAME}.Tests'."
 ```
 
-Be sure to make add_project.sh executable:
+Be sure to make add_problem.sh executable:
 
 ```sh
-chmod +x add_project.sh
+chmod +x add_problem.sh
 ```
 
 ### 1.5 Writing Tests and C# Code
 
-**TwoSum/TwoSum.cs**
-
-```cs
-public class TwoSumSolver
-{
-    public int[] TwoSum(int[] nums, int target)
-    {
-        // Create a dictionary to store the difference and its corresponding index
-        Dictionary<int, int> numDict = new Dictionary<int, int>();
-
-        // Iterate through the array
-        for (int i = 0; i < nums.Length; i++)
-        {
-            // Calculate the difference needed to reach the target
-            int difference = target - nums[i];
-
-            // Check if the difference is already in the dictionary
-            if (numDict.ContainsKey(difference))
-            {
-                // If found, return the indices of the current number and the difference
-                return new int[] { numDict[difference], i };
-            }
-
-            // If not found, add the current number and its index to the dictionary
-            if (!numDict.ContainsKey(nums[i]))
-            {
-                numDict.Add(nums[i], i);
-            }
-        }
-
-        // If no solution is found, throw an exception (as per LeetCode's requirements)
-        throw new ArgumentException("No two sum solution");
-    }
-}
-```
+The script above generates a testing file that will look similar to this:
 
 **TwoSum.Tests/TwoSumTests.cs**
 
@@ -208,6 +254,36 @@ namespace TwoSum.Tests
 }
 ```
 
+**TwoSum/TwoSum.cs**
+
+```cs
+public class TwoSumSolver
+{
+    public int[] TwoSum(int[] nums, int target)
+    {
+        // Store the difference from target and its index
+        Dictionary<int, int> numDict = new Dictionary<int, int>();
+
+        for (int i = 0; i < nums.Length; i++)
+        {
+            int difference = target - nums[i];
+
+            if (numDict.ContainsKey(difference))
+            {
+                return new int[] { numDict[difference], i };
+            }
+
+            if (!numDict.ContainsKey(nums[i]))
+            {
+                numDict.Add(nums[i], i);
+            }
+        }
+
+        throw new ArgumentException("No two sum solution");
+    }
+}
+```
+
 ### 1.6 Running Tests
 
 You can test the entire repository by running the following command from the root directory of the project.
@@ -223,13 +299,11 @@ For example:
 **TwoSum.Tests/**
 
 ```sh
+cd TwoSum.Tests
+
 dotnet test
 ```
 
 ![dotnet test](/images/posts/test-driven-c-sharp/example.png)
 
-### Git Repository
-
-My remote repository can be found [here](https://github.com/HansonSoftware/cs-neetcode). Use [this commit](https://github.com/HansonSoftware/cs-neetcode/commit/9d6952e832c7d4b0a21dde9baea8753e170428b8) to avoid cloning all my solutions.
-
-## _Thanks for reading!_
+**_Happy Coding!_**
