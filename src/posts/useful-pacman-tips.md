@@ -20,7 +20,7 @@ In order to _fully_ update your system you want to use this combination of flags
 sudo pacman -Syu
 ```
 
-**Don't** run the following commands, this is merely an explanation:
+**Don't** run the following commands until you've read this whole section. This is merely an explanation:
 
 `-Sy` will "sync" your package database, but the updates won't be installed.
 
