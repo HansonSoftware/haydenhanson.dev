@@ -188,9 +188,9 @@ if [ "$defaultFile" = "Class1.cs" ]; then
 	touch "$PROBLEM_NAME.cs"
 
 	# Preview to terminal
-	echo "public class ${PROBLEM_NAME}Solver\n{\n  public void ${PROBLEM_NAME}()\n  {\n    // Your implementation here...\n    throw new ArgumentException(\"No ContainsDuplicate solution\");\n  }\n}\n"
+	echo "public class ${PROBLEM_NAME}Solver\n{\n  public void ${PROBLEM_NAME}()\n  {\n    // Your implementation here...\n    throw new ArgumentException(\"No ${PROBLEM_NAME} solution\");\n  }\n}\n"
 	# Write to file
-	echo "public class ${PROBLEM_NAME}Solver\n{\n  public void ${PROBLEM_NAME}()\n  {\n    // Your implementation here...\n    throw new ArgumentException(\"No ContainsDuplicate solution\");\n  }\n}\n" >> "${PROBLEM_NAME}.cs"
+	echo "public class ${PROBLEM_NAME}Solver\n{\n  public void ${PROBLEM_NAME}()\n  {\n    // Your implementation here...\n    throw new ArgumentException(\"No ${PROBLEM_NAME} solution\");\n  }\n}\n" >> "${PROBLEM_NAME}.cs"
 fi
 
 echo "Done."
@@ -234,7 +234,7 @@ chmod +x add_problem.sh
 
 ### 1.5 Writing Tests and C# Code
 
-The script above generates a testing file that will look similar to this:
+The script above generates a testing file where you can write your tests like so:
 
 **TwoSum.Tests/TwoSumTests.cs**
 
@@ -255,6 +255,8 @@ namespace TwoSum.Tests
 ```
 
 **TwoSum/TwoSum.cs**
+
+Next you will implement your solution, test, debug and repeat until you get it right!
 
 ```cs
 public class TwoSumSolver
