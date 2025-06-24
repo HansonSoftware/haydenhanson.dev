@@ -111,7 +111,7 @@
       <WorkButton
         {toggleModal}
         i={0}
-        jobTitle="Application Engineer"
+        jobTitle="Application Developer"
         company="Index AR Solutions"
         datesWorked="Sep 2024 - Present"
       />
@@ -121,7 +121,7 @@
           class="text-xl font-semibold border-b border-foreground text-center"
           slot="header"
         >
-          As an Application Engineer I...
+          As an Application Developer I...
         </h2>
 
         <ol class="list-disc space-y-2">
