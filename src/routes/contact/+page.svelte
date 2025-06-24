@@ -62,7 +62,6 @@
         <p class="text-center italic text-sm indent-2">Let's connect!</p>
       </div>
     </div>
-
     <div class="flex flex-col sm:flex-row gap-8">
       <div class="space-y-4">
         <div class="flex flex-col gap-0 sm:text-center">
@@ -75,18 +74,6 @@
             <h2 class=" font-semibold text-2xl underline">Email</h2>
           </IconLink>
           <p class="text-center italic text-sm indent-2">Shoot me an email.</p>
-        </div>
-
-        <div class="flex flex-col gap-0 text-center">
-          <IconLink
-            href="https://pandorasolutions.co"
-            target="_blank"
-            title="Pandora Solutions"
-          >
-            <Globe class="h-6 w-6 sm:h-8 sm:w-8 " />
-            <h2 class="font-semibold text-2xl underline">Freelance</h2>
-          </IconLink>
-          <p class="italic text-sm text-center">Need a website?</p>
         </div>
       </div>
     </div>
